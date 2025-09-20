@@ -1,140 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anshul Jain — Data Scientist & ML Engineer</title>
-  <meta name="description" content="Anshul Jain — M.Tech | Data Science, NLP, ML. Portfolio with projects, resume and contact." />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Anshul Jain — Data Scientist & ML Engineer" />
-  <meta property="og:description" content="M.Tech student working on multimodal ML, CLIP-based fake-news detection, ONNX mobile apps and recommender systems." />
-  <meta property="og:image" content="images/og-image.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anshul Jain — AI & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Anshul Jain — M.Tech at IIT Jodhpur | Data Science, Machine Learning, NLP, and AI projects.">
+  <link rel="icon" href="images/favicon.png">
 
-  <link rel="icon" href="images/favicon.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    :root{--accent:#2563eb;--bg:#f7f9fc;--card:#fff;--text:#0f172a}
-    *{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
-    .wrap{max-width:980px;margin:28px auto;padding:20px}
-    .card{background:var(--card);border-radius:12px;padding:24px;box-shadow:0 8px 24px rgba(12,14,21,0.06)}
-    header{display:flex;gap:18px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:14px;background:#e6eefc;display:grid;place-items:center;font-weight:700;font-size:1.2rem;color:var(--accent)}
-    h1{margin:0;font-size:1.6rem}
-    .subtitle{color:gray;margin-top:6px}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
-    .section{margin-bottom:16px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#eef6ff;padding:6px 10px;border-radius:8px;font-size:0.88rem;color:var(--accent);border:1px solid rgba(37,99,235,0.08)}
-    .project{border-left:4px solid rgba(15,23,42,0.04);padding:10px 12px;border-radius:6px;background:#fbfdff;margin-bottom:10px}
-    a.cta{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
-    .muted{color:gray;font-size:0.95rem}
-    footer{margin-top:18px;text-align:center;color:gray;font-size:0.9rem}
-    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc;margin-top:8px}
-    form button{margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--accent);color:#fff;border:0}
-    @media(max-width:860px){.grid{grid-template-columns:1fr}.avatar{width:84px;height:84px}}
+    body { margin:0; font-family: 'Poppins', sans-serif; background:#f9fafc; color:#1e293b; }
+    header { text-align:center; padding:50px 20px; background:linear-gradient(135deg,#2563eb,#1e3a8a); color:#fff; }
+    header img { width:140px; height:140px; border-radius:50%; border:4px solid #fff; }
+    header h1 { margin:20px 0 10px; font-size:2rem; }
+    header p { font-size:1.1rem; opacity:0.9; }
+    .btn { display:inline-block; margin:12px 6px; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; }
+    .btn-primary { background:#fff; color:#2563eb; }
+    .btn-outline { border:2px solid #fff; color:#fff; }
+
+    .container { max-width:1100px; margin:auto; padding:40px 20px; }
+    h2 { text-align:center; margin-bottom:25px; font-size:1.8rem; color:#2563eb; }
+
+    .grid { display:grid; gap:20px; }
+    .card { background:#fff; border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.08); transition:transform 0.2s; }
+    .card:hover { transform:translateY(-5px); }
+    .skills span { display:inline-block; margin:6px; padding:6px 12px; background:#e0f2fe; color:#0369a1; border-radius:20px; font-size:0.9rem; }
+
+    footer { text-align:center; padding:20px; background:#f1f5f9; margin-top:40px; font-size:0.9rem; color:#64748b; }
+    a { color:#2563eb; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    @media(min-width:768px){
+      .grid-2 { grid-template-columns:repeat(2,1fr); }
+      .grid-3 { grid-template-columns:repeat(3,1fr); }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <header>
-        <div class="avatar">AJ</div>
-        <div>
-          <h1>Anshul Jain</h1>
-          <div class="subtitle">M.Tech • Data Science & Machine Learning</div>
-          <div style="margin-top:10px">
-            <a href="#projects" class="cta">View Projects</a>
-            <a href="resume.pdf" style="margin-left:10px;text-decoration:none;padding:10px 12px;border-radius:8px;border:1px solid #e6eefc;color:var(--accent)" download>Download Resume</a>
-          </div>
-        </div>
-      </header>
 
-      <div class="grid" style="margin-top:20px">
-        <main>
-          <section class="section">
-            <h3>About</h3>
-            <p class="muted">I build ML systems and research-grade NLP/NLU models. Currently pursuing M.Tech and working on multimodal understanding, fake-news detection, and recommendation systems. I write reproducible code, build demos, and deploy models to edge/mobile.</p>
-          </section>
+  <!-- Hero -->
+  <header>
+    <img src="images/anshul.jpg" alt="Anshul Jain">
+    <h1>Anshul Jain</h1>
+    <p>M.Tech in Artificial Intelligence | IIT Jodhpur<br>
+       Data Scientist • Machine Learning • NLP</p>
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+  </header>
 
-          <section id="projects" class="section">
-            <h3>Projects</h3>
+  <!-- About -->
+  <section class="container">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      I am passionate about building scalable ML systems, multimodal AI models, and cutting-edge NLP research. 
+      Currently pursuing M.Tech in Artificial Intelligence at IIT Jodhpur, my work includes negation-aware audio 
+      generation, fake news detection using CLIP, and AI-powered virtual try-on systems.
+    </p>
+  </section>
 
-            <div class="project">
-              <strong>CLIP-based Fake News Classifier</strong>
-              <div class="muted">Cross-modal attention + contrastive learning on Fakeddit. Architecture, training scripts and evaluation notebooks included.</div>
-              <div style="margin-top:6px"><a href="https://github.com/your/repo" target="_blank">GitHub →</a></div>
-            </div>
-
-            <div class="project">
-              <strong>ONNX Digit Predictor (Android)</strong>
-              <div class="muted">Converted PyTorch model to ONNX and integrated ONNX Runtime Mobile in an Android APK.</div>
-            </div>
-
-            <div class="project">
-              <strong>Hybrid Recommender</strong>
-              <div class="muted">Combined collaborative and content-based signals with a meta-learning regressor; evaluated with RMSE & Precision@K.</div>
-            </div>
-          </section>
-
-          <section class="section">
-            <h3>Experience & Education</h3>
-            <p><strong>Data Science Intern</strong> — Optimspace (Remote)</p>
-            <p><strong>M.Tech</strong> — [Institute], Jan 2025 – Present</p>
-          </section>
-
-          <section class="section">
-            <h3>Contact</h3>
-            <p class="muted">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p class="muted">GitHub: <a href="https://github.com/Anshul3914" target="_blank">github.com/Anshul3914</a></p>
-            <p class="muted">LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-          </section>
-
-          <section class="section">
-            <h3>Send a message</h3>
-            <!-- Example Formspree endpoint: replace ACTION with your Formspree url or Netlify Forms config -->
-            <form action="https://formspree.io/f/your-id" method="POST">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Your email" required />
-              <textarea name="message" rows="4" placeholder="Message" required></textarea>
-              <button type="submit">Send</button>
-            </form>
-            <p class="muted" style="font-size:0.85rem;margin-top:8px">If you prefer, email me directly at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-          </section>
-        </main>
-
-        <aside>
-          <div class="section">
-            <h4>Skills</h4>
-            <div class="skills">
-              <span class="skill">Python</span>
-              <span class="skill">PyTorch</span>
-              <span class="skill">NLP</span>
-              <span class="skill">PySpark</span>
-              <span class="skill">Docker</span>
-              <span class="skill">SQL</span>
-            </div>
-          </div>
-
-          <div class="section">
-            <h4>Highlights</h4>
-            <ul>
-              <li>Published M.Tech research</li>
-              <li>Built Android app with ONNX</li>
-              <li>Experience with large-scale datasets</li>
-            </ul>
-          </div>
-        </aside>
+  <!-- Projects -->
+  <section class="container" id="projects">
+    <h2>Projects</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>AI-Powered Virtual Try-On</h3>
+        <p>Photorealistic outfit try-on using U-Net, GANs, and Diffusion Models. Deployed interactive demo with Streamlit & Hugging Face.</p>
+        <a href="https://github.com/Anshul3914/ai-virtual-tryon" target="_blank">GitHub →</a>
       </div>
-
-      <footer>
-        © <span id="year"></span> Anshul Jain — Built with HTML & CSS
-      </footer>
+      <div class="card">
+        <h3>CLIP-Based Fake News Detection</h3>
+        <p>Multimodal classifier using CLIP, Cross-Modal Attention & Contrastive Learning on the Fakeddit dataset.</p>
+        <a href="https://github.com/Anshul3914/clip-fakenews-detection" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>EEG PCA vs ICA Study</h3>
+        <p>Comparative analysis of PCA and ICA in EEG preprocessing and classification with Python & scikit-learn.</p>
+        <a href="https://github.com/Anshul3914/eeg-pca-ica-comparative-study" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Sequential Sketch Generation</h3>
+        <p>Built Seq2Seq LSTM with Attention to generate sequential sketches using the QuickDraw dataset.</p>
+        <a href="https://github.com/Anshul3914/sequential-sketch-generation" target="_blank">GitHub →</a>
+      </div>
     </div>
-  </div>
+  </section>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <!-- Skills -->
+  <section class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills" style="text-align:center;">
+      <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span>
+      <span>Hugging Face</span><span>PySpark</span><span>SQL</span><span>Docker</span>
+      <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span>
+    </div>
+  </section>
+
+  <!-- Education & Experience -->
+  <section class="container">
+    <h2>Education & Experience</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Education</h3>
+        <ul>
+          <li><b>M.Tech (AI)</b>, IIT Jodhpur — CGPA 9.1 (2024–Present)</li>
+          <li><b>B.Tech (Mech)</b>, NIT Bhopal — CGPA 8.72 (2019–2023)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Experience</h3>
+        <ul>
+          <li><b>Data Science Intern</b>, Optimspace (May–Jul 2023)<br>
+              End-to-end ML workflows, dashboards, and deployment-ready pipelines.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="container">
+    <h2>Achievements</h2>
+    <div class="grid grid-2">
+      <div class="card"><b>GATE CS 2024</b> — AIR 1,500 (Top 1.2%)</div>
+      <div class="card"><b>JEE Advanced 2019</b> — Top 1.5% among 1M+ aspirants</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+      📧 <a href="mailto:anshul.jain.39142@gmail.com">anshul.jain.39142@gmail.com</a> | 
+      <a href="https://www.linkedin.com/in/anshul-jain-b94a30214/" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/Anshul3914" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Anshul Jain 
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
